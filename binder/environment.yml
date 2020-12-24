@@ -3,5 +3,11 @@ channels:
   - conda-forge
 dependencies:
   - pip
+  - pip:
+    - simplebot_chess
+    - simplebot_echo
+    - simplebot_polls
+    - simplebot_sudoku
+    - simplebot_xkcd
   - rust
   - wheel
