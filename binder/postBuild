@@ -16,4 +16,4 @@ git clone https://github.com/simplebot-inc/simplebot
 pip3 install ./simplebot
 
 git clone https://github.com/simplebot-inc/simplebot_plugins
-python3 simplebot_plugins/scripts/install_plugin.py
+# python3 simplebot_plugins/scripts/install_plugin.py # buggy?
