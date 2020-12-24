@@ -1,0 +1,9 @@
+# https://support.delta.chat/t/how-to-set-up-a-delta-bot-in-7-steps/1170
+
+pip3 install --pre -U -i https://m.devpi.net/dc/master deltachat
+
+git clone https://github.com/simplebot-inc/simplebot
+pip3 install ./simplebot
+
+git clone https://github.com/simplebot-inc/simplebot_plugins
+python3 simplebot_plugins/scripts/install_plugin.py
