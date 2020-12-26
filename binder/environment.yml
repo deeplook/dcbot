@@ -2,6 +2,8 @@ name: dcbot
 channels:
   - conda-forge
 dependencies:
+  - jupyterlab
   - pip
+  - requests
   - rust
   - wheel
