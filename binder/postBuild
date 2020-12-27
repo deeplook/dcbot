@@ -1,13 +1,3 @@
-jupyter labextension install \
-  @jupyter-widgets/jupyterlab-manager \
-  jupyterlab-python-file \
-  @jupyter-widgets/jupyterlab-sidecar
-
-# Notebooks with extensions that auto-run code must be "trusted" to work the first time
-# jupyter trust docs/notebooks/*.ipynb
-
-jupyter lab build --dev-build=False --minimize=False
-
 # https://support.delta.chat/t/how-to-set-up-a-delta-bot-in-7-steps/1170
 
 pip3 install --pre -U -i https://m.devpi.net/dc/master deltachat
@@ -19,3 +9,4 @@ git clone https://github.com/simplebot-inc/simplebot_plugins
 # python3 simplebot_plugins/scripts/install_plugin.py # needs interactive input
 pip install -U "simplebot_plugins/plugins/simplebot_echo"
 pip install -U "simplebot_plugins/plugins/simplebot_xkcd"
+pip install -e ./simplebot_here
