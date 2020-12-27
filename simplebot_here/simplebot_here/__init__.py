@@ -16,6 +16,7 @@ import io
 import os
 import random
 from math import radians, degrees, log, cos, tan, pi, atan, sinh
+from typing import Tuple
 
 from deltabot import DeltaBot
 from deltabot.bot import Replies
@@ -50,7 +51,7 @@ def cmd_here(command: IncomingCommand, replies: Replies) -> None:
 
 # ======== Utilities ===============
 
-def deg2tile(lat_deg, lon_deg, zoom):
+def deg2tile(lat_deg: float, lon_deg: float, zoom: int) -> Tuple[int, int]:
     lat_rad = radians(lat_deg)
     n = 2.0 ** zoom
     xtile = int((lon_deg + 180.0) / 360.0 * n)
