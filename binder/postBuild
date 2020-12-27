@@ -11,3 +11,5 @@ pip install -U "simplebot_plugins/plugins/simplebot_echo"
 pip install -U "simplebot_plugins/plugins/simplebot_xkcd"
 
 pip install -e ./simplebot_here
+
+# wget https://merlinux.eu/.well-known/autoconfig/mail/config-v1.1.xml
