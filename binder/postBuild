@@ -1,15 +1,20 @@
-# https://support.delta.chat/t/how-to-set-up-a-delta-bot-in-7-steps/1170
+# Based on: https://support.delta.chat/t/how-to-set-up-a-delta-bot-in-7-steps/1170
 
+# Install DeltaChat:
 pip3 install --pre -U -i https://m.devpi.net/dc/master deltachat
 
+# Install DeltaChat's SimpleBot:
 git clone https://github.com/simplebot-inc/simplebot
 pip3 install ./simplebot
 
+# Install a few SimpleBot plugins
 git clone https://github.com/simplebot-inc/simplebot_plugins
 # python3 simplebot_plugins/scripts/install_plugin.py # needs interactive input
 pip install -U "simplebot_plugins/plugins/simplebot_echo"
 pip install -U "simplebot_plugins/plugins/simplebot_xkcd"
 
+# Install the SimpleBot plugin defined in this repo:
 pip install -e ./simplebot_here
 
+# Maybe useful for configuring the bot:
 # wget https://merlinux.eu/.well-known/autoconfig/mail/config-v1.1.xml
