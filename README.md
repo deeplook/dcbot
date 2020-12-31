@@ -6,7 +6,7 @@ This is a first attempt at writing a [bot](https://bots.delta.chat/) for [DeltaC
 
 **Warning:** Because the standard mybinder servers will not allow network access to IMAP/SMTP ports this will actually *not* work using the "launch binder" button above! Running this repo with `repo2docker` locally should work, though.
 
-To get started with a local repo2docker, make sure you have it installed and run it similar to this, with your own values:
+To get started with a local [repo2docker](https://github.com/jupyterhub/repo2docker), make sure you have it installed and run it similar to this, with your own values:
 
 ```bash
 pip install jupyter-repo2docker
