@@ -82,5 +82,6 @@ def get_traffic_tile(pos: dict) -> bytes:
 def get_maptile(address: str) -> dict:
     pos = geocode(address)
     image = get_traffic_tile(pos)
-    return dict(text="Some text", filename="Some_filename",
+    return dict(text=f"Address: {address}\nLat/lon: {pos['lat']}/{pos['lng']}",
+                filename="file.png",
                 bytefile=io.BytesIO(image))
